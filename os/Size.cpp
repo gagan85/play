@@ -1,4 +1,4 @@
-/**
+/*
  * Author: Sam Zhao <sam@cs.brown.edu>
  */
 #include <iostream>

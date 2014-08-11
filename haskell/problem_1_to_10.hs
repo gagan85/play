@@ -1,5 +1,4 @@
--- Author: Sam Zhao
--- Email: sam@cs.brown.edu
+-- Author: Sam Zhao <sam@cs.brown.edu>
 -- http://www.haskell.org/haskellwiki/99_questions/1_to_10
 
 -- P1: Find the last element of a list.

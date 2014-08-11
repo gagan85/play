@@ -1,5 +1,6 @@
-
-
+#
+# Author: Sam Zhao <sam@cs.brown.edu>
+#
 class Node:
     def __init__(self, label, children=[]):
         self.label = label
