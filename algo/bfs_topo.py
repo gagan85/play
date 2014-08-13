@@ -20,13 +20,21 @@ def top_bfs(start_node):
             node.visited = True
             stack += [node]
             [queue.append(c) for c in node.children]
+        else:
+            bubbledNode = stack.pop(stack.index(node))
+            stack += [bubbledNode]
     stack.reverse()
     return stack
 
-leaves = [Node('a'), Node('b')]
-inner0 = [Node('c', leaves), Node('d', [leaves[0]])]
-inner1 = [Node('e', inner0)]
+b0 = Node('b0')
+c0 = Node('c0', [b0])
+a0 = Node('a0', [b0, c0])
+
+c1 = Node('c1')
+b1 = Node('b1', [c1])
+a1 = Node('a1', [b1, c1])
 
 def test():
-    xs = top_bfs(inner1[0])
-    print [str(x) for x in xs]
+    for n in [a0, a1]:
+        xs = top_bfs(n)
+        print [str(x) for x in xs]
