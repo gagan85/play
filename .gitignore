@@ -5,3 +5,4 @@
 *.o
 *.kdev4
 *.cpp~
+*.out
